@@ -1,3 +1,2 @@
-streamlit
-scikit-learn
-python 24.3.1
+streamlit>=1.0.0
+scikit-learn>=0.24.0
