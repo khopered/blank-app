@@ -51,14 +51,15 @@ if not data.empty:
     cosine_sim = compute_similarity(data)
 
     # Streamlit Interface
-    st.title("Scentsible Recommendations")
+    st.title("Scent-sible Recommendations")
     st.markdown(
         "Discover your next favorite scent with our AI-powered recommender system. Simply enter a perfume name to see similar recommendations! Let's make it make scents!"
     )
 
     # User input for perfume name
-    st.subheader("Input Perfume Name")
-    perfume_name = st.text_input("Enter a perfume name:")
+    st.subheader("Input Perfume Name or Scent Notes")
+    st.markdown("For example: Baccarat Rouge 540, Bergamot, Santal 33 Eau de Parfum, Vanilla")
+    perfume_name = st.text_input("Enter your favorite scent:")
 
     # Number of recommendations
     num_recommendations = st.slider("Number of recommendations:", 1, 10, 5)
